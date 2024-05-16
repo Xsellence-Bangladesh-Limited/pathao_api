@@ -1,5 +1,5 @@
 {
-    'name': 'PATHAO API',
+    'name': 'Pathao API',
     'version': '1.0',
     'category': 'Extra Tools',
     'summary': "Module for PATHAO API integration",

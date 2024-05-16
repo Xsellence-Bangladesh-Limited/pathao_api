@@ -31,10 +31,11 @@ def get_credentials():
             return access_token, refresh_token
         else:
             print("Error:", response.text)
+            raise ValidationError('Authentication Failed!')
 
     except Exception as e:
         print("Error:", e)
-
+        raise ValidationError('Authentication Failed!')
 
 def create_an_order(data, access_token):
     url = "https://api-hermes.pathao.com/aladdin/api/v1/orders"
