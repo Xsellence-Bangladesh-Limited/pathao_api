@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <menuitem id="pathao_api_credentials_root" name="Pathao" sequence="50">
+
+        <menuitem id="pathao_user_credentials_menu_id"
+                  name="Pathao User Credentials"
+                  action="pathao_user_credentials_action_id"
+                  sequence="0"
+                  groups="base.group_no_one"
+        />
+
+        <menuitem id="pathao_api_credentials_menu_id"
+                  name="Pathao API Credentials"
+                  action="pathao_api_credentials_action_id"
+                  sequence="1"
+                  groups="base.group_no_one"
+        />
+
+        <menuitem id="pathao_stores_menu_id"
+                  name="Pathao Stores"
+                  action="pathao_stores_action_id"
+                  sequence="2"/>
+
+        <menuitem id="pathao_cities_menu_id"
+                  name="Pathao Cities"
+                  action="pathao_cities_action_id"
+                  sequence="3"/>
+
+        <menuitem id="pathao_zones_menu_id"
+                  name="Pathao Zones"
+                  action="pathao_zones_action_id"
+                  sequence="4"/>
+
+        <menuitem id="pathao_areas_menu_id"
+                  name="Pathao Areas"
+                  action="pathao_areas_action_id"
+                  sequence="5"/>
+    </menuitem>
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pathao_api_credentials,pathao_api_credentials,model_pathao_api_credentials,,1,1,1,1
+pathao_user_credentials,pathao_user_credentials,model_pathao_user_credentials,,1,1,1,1
+pathao_stores,pathao_stores,model_pathao_stores,,1,1,1,1
+pathao_cities,pathao_cities,model_pathao_cities,,1,1,1,1
+pathao_zones,pathao_zones,model_pathao_zones,,1,1,1,1
+pathao_areas,pathao_areas,model_pathao_areas,,1,1,1,1

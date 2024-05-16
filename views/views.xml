@@ -1,0 +1,293 @@
+<odoo>
+    <!-- Tree view of pathao.api.credentials-->
+    <record model="ir.ui.view" id="pathao_api_credentials_tree_view_id">
+        <field name="name">Pathao API Credentials</field>
+        <field name="model">pathao.api.credentials</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="access_token"/>
+                <field name="refresh_token"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.api.credentials-->
+    <record model="ir.ui.view" id="pathao_api_credentials_form_view_id">
+        <field name="name">Pathao API Credentials</field>
+        <field name="model">pathao.api.credentials</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="access_token"/>
+                            <field name="refresh_token"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.api.credentials-->
+    <record model="ir.actions.act_window" id="pathao_api_credentials_action_id">
+        <field name="name">Pathao API Credentials</field>
+        <field name="res_model">pathao.api.credentials</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree view of pathao.stores-->
+    <record model="ir.ui.view" id="pathao_stores_tree_view_id">
+        <field name="name">Pathao Stores</field>
+        <field name="model">pathao.stores</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="store_id"/>
+                <field name="store_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.stores-->
+    <record model="ir.ui.view" id="pathao_stores_form_view_id">
+        <field name="name">Pathao Stores</field>
+        <field name="model">pathao.stores</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="store_id"/>
+                            <field name="store_name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.stores-->
+    <record model="ir.actions.act_window" id="pathao_stores_action_id">
+        <field name="name">Pathao Stores</field>
+        <field name="res_model">pathao.stores</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree view of pathao.cities-->
+    <record model="ir.ui.view" id="pathao_cities_tree_view_id">
+        <field name="name">Pathao Cities</field>
+        <field name="model">pathao.cities</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="city_id"/>
+                <field name="city_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.cities-->
+    <record model="ir.ui.view" id="pathao_cities_form_view_id">
+        <field name="name">Pathao Cities</field>
+        <field name="model">pathao.cities</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="city_id"/>
+                            <field name="city_name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.cities-->
+    <record model="ir.actions.act_window" id="pathao_cities_action_id">
+        <field name="name">Pathao Cities</field>
+        <field name="res_model">pathao.cities</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree view of pathao.zones-->
+    <record model="ir.ui.view" id="pathao_zones_tree_view_id">
+        <field name="name">Pathao Zones</field>
+        <field name="model">pathao.zones</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="zone_id"/>
+                <field name="zone_name"/>
+                <field name="city_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.zones-->
+    <record model="ir.ui.view" id="pathao_zones_form_view_id">
+        <field name="name">Pathao Zones</field>
+        <field name="model">pathao.zones</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="zone_id"/>
+                            <field name="zone_name"/>
+                            <field name="city_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.zones-->
+    <record model="ir.actions.act_window" id="pathao_zones_action_id">
+        <field name="name">Pathao Zones</field>
+        <field name="res_model">pathao.zones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree view of pathao.areas-->
+    <record model="ir.ui.view" id="pathao_areas_tree_view_id">
+        <field name="name">Pathao Areas</field>
+        <field name="model">pathao.areas</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="area_id"/>
+                <field name="area_name"/>
+                <field name="zone_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.areas-->
+    <record model="ir.ui.view" id="pathao_areas_form_view_id">
+        <field name="name">Pathao Areas</field>
+        <field name="model">pathao.areas</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="area_id"/>
+                            <field name="area_name"/>
+                            <field name="zone_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.areas-->
+    <record model="ir.actions.act_window" id="pathao_areas_action_id">
+        <field name="name">Pathao Areas</field>
+        <field name="res_model">pathao.areas</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Tree view of pathao.user.credentials-->
+    <record model="ir.ui.view" id="pathao_user_credentials_tree_view_id">
+        <field name="name">Pathao User Credentials</field>
+        <field name="model">pathao.user.credentials</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="username"/>
+                <field name="password"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view of pathao.user.credentials-->
+    <record model="ir.ui.view" id="pathao_user_credentials_form_view_id">
+        <field name="name">Pathao User Credentials</field>
+        <field name="model">pathao.user.credentials</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="username"/>
+                            <field name="password"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the tree and form view of pathao.user.credentials-->
+    <record model="ir.actions.act_window" id="pathao_user_credentials_action_id">
+        <field name="name">Pathao User Credentials</field>
+        <field name="res_model">pathao.user.credentials</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Adding send to pathao button and other necessary fields to the sale form view-->
+    <record id="sale_order_inherit" model="ir.ui.view">
+        <field name="name">sale.order.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="priority">32</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='action_cancel']" position="after">
+                <field name="is_pathao" invisible="1"/>
+                <button name="send_sale_order_to_pathao" string="Send to Pathao" type="object" class="btn-primary" invisible="is_pathao == True"/>
+            </xpath>
+
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="store_id"/>
+            </xpath>
+
+            <xpath expr="//field[@name='store_id']" position="after">
+                <field name="merchant_order_id"/>
+            </xpath>
+
+            <xpath expr="//field[@name='merchant_order_id']" position="after">
+                <field name="recipient_name"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_name']" position="after">
+                <field name="recipient_phone"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_phone']" position="after">
+                <field name="recipient_address"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_address']" position="after">
+                <field name="recipient_city"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_city']" position="after">
+                <field name="recipient_zone" domain="[('city_id', '=', recipient_city)]"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_zone']" position="after">
+                <field name="recipient_area" domain="[('zone_id', '=', recipient_zone)]"/>
+            </xpath>
+
+            <xpath expr="//field[@name='recipient_area']" position="after">
+                <field name="special_instruction"/>
+            </xpath>
+
+            <xpath expr="//field[@name='special_instruction']" position="after">
+                <field name="item_quantity"/>
+            </xpath>
+
+            <xpath expr="//field[@name='item_quantity']" position="after">
+                <field name="item_weight"/>
+            </xpath>
+
+            <xpath expr="//field[@name='item_weight']" position="after">
+                <field name="amount_to_collect"/>
+            </xpath>
+
+            <xpath expr="//field[@name='amount_to_collect']" position="after">
+                <field name="item_description"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

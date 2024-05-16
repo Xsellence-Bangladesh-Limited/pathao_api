@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_automate_pathao_api_crendentials_retrieval" model="ir.cron">
+        <field name="name">Pathao API Credentials Retrieval</field>
+        <field name="model_id" ref="model_pathao_automate_api_credentials_retrieval"/>
+        <field name="type">ir.actions.server</field>
+        <field name="state">code</field>
+        <field name="code">model.retrieve_credentials()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">weeks</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <record id="ir_cron_automate_pathao_stores_retrieval" model="ir.cron">
+        <field name="name">Pathao Stores Retrieval</field>
+        <field name="model_id" ref="model_pathao_stores_retrieval"/>
+        <field name="type">ir.actions.server</field>
+        <field name="state">code</field>
+        <field name="code">model.retrieve_stores()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <record id="ir_cron_automate_pathao_cities_retrieval" model="ir.cron">
+        <field name="name">Pathao Cities Retrieval</field>
+        <field name="model_id" ref="model_pathao_cities_retrieval"/>
+        <field name="type">ir.actions.server</field>
+        <field name="state">code</field>
+        <field name="code">model.retrieve_cities()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <record id="ir_cron_automate_pathao_zones_retrieval" model="ir.cron">
+        <field name="name">Pathao Zones Retrieval</field>
+        <field name="model_id" ref="model_pathao_zones_retrieval"/>
+        <field name="type">ir.actions.server</field>
+        <field name="state">code</field>
+        <field name="code">model.retrieve_zones()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+    <record id="ir_cron_automate_pathao_areas_retrieval" model="ir.cron">
+        <field name="name">Pathao Areas Retrieval</field>
+        <field name="model_id" ref="model_pathao_areas_retrieval"/>
+        <field name="type">ir.actions.server</field>
+        <field name="state">code</field>
+        <field name="code">model.retrieve_areas()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+    </record>
+</odoo>
